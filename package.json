@@ -1,0 +1,36 @@
+{
+  "name": "hostyle",
+  "version": "1.0.0",
+  "description": "Bootstrap-like, considered beautiful by me. 🌸",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "codecov": "^3.8.1",
+    "dirty-chai": "^2.0.1",
+    "eslint": "^7.16.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "mocha": "^8.2.1",
+    "nodemon": "^2.0.6",
+    "nyc": "^15.1.0",
+    "prettier": "^2.2.1",
+    "sass": "^1.30.0"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/nyc -R spec --reporter=lcov --exclude './src/**/*.spec.js' ./node_modules/.bin/_mocha './{,!(node_modules)/**}/*.spec.js'",
+    "sass-watch": "./node_modules/.bin/sass --watch src/styles/:dist/css/ --no-source-map --trace --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimitri-bourreau/hostyle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimitri-bourreau/hostyle/issues"
+  },
+  "homepage": "https://github.com/dimitri-bourreau/hostyle#readme"
+}
